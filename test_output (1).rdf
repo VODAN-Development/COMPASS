@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Anemia</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Anemia</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Gestational_Type_1_diabetes_mellitus</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Gestational_Type_2_diabetes_mellitus</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Gestational_Type_2_diabetes_mellitus</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<diagnosisDescription xmlns="http://mydata.example.org/">HIV_infection</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Hepatitis_B</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Preeclampsia</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Rubella</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<diagnosisDescription xmlns="http://mydata.example.org/">Syphilis</diagnosisDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<gender xmlns="http://mydata.example.org/">Female</gender>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<lastName xmlns="http://mydata.example.org/">Otieno</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<lastName xmlns="http://mydata.example.org/">Njeri</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<lastName xmlns="http://mydata.example.org/">Atieno</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<lastName xmlns="http://mydata.example.org/">Kamau</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<lastName xmlns="http://mydata.example.org/">Chebet</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<lastName xmlns="http://mydata.example.org/">Muthoni</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<lastName xmlns="http://mydata.example.org/">Mutheu</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<lastName xmlns="http://mydata.example.org/">Wangari</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<lastName xmlns="http://mydata.example.org/">Wafula</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<lastName xmlns="http://mydata.example.org/">Kiptoo</lastName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.776+01:00</recordedAt>
+	<recordedAt xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.804+01:00</recordedAt>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<patientId xmlns="http://mydata.example.org/">P001</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<patientId xmlns="http://mydata.example.org/">P002</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<patientId xmlns="http://mydata.example.org/">P003</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<patientId xmlns="http://mydata.example.org/">P004</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<patientId xmlns="http://mydata.example.org/">P005</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<patientId xmlns="http://mydata.example.org/">P006</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<patientId xmlns="http://mydata.example.org/">P007</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<patientId xmlns="http://mydata.example.org/">P008</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<patientId xmlns="http://mydata.example.org/">P009</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<patientId xmlns="http://mydata.example.org/">P010</patientId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<ageMonths xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</ageMonths>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<rdf:type rdf:resource="http://mydata.example.org/Diagnosis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000001</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000002</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000003</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000004</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000005</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000006</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000007</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000008</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000009</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<phoneNumber xmlns="http://mydata.example.org/">0712000010</phoneNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V002"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V005"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V006"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V007"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V008"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V009"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<hasVisit xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Visit/V010"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:00:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:20:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">09:40:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">10:00:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">10:20:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">10:40:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:00:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:20:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">11:40:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<visitTime xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#time">12:00:00</visitTime>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<firstName xmlns="http://mydata.example.org/">Amina</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<firstName xmlns="http://mydata.example.org/">Grace</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<firstName xmlns="http://mydata.example.org/">Mary</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<firstName xmlns="http://mydata.example.org/">Elizabeth</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<firstName xmlns="http://mydata.example.org/">Joyce</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<firstName xmlns="http://mydata.example.org/">Purity</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<firstName xmlns="http://mydata.example.org/">Alice</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<firstName xmlns="http://mydata.example.org/">Cynthia</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<firstName xmlns="http://mydata.example.org/">Sarah</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<firstName xmlns="http://mydata.example.org/">Ruth</firstName>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<createdBy xmlns="http://mydata.example.org/">system</createdBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<ageYears xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</ageYears>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<upiNumber xmlns="http://mydata.example.org/">UPI001</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<upiNumber xmlns="http://mydata.example.org/">UPI002</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<upiNumber xmlns="http://mydata.example.org/">UPI003</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<upiNumber xmlns="http://mydata.example.org/">UPI004</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<upiNumber xmlns="http://mydata.example.org/">UPI005</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<upiNumber xmlns="http://mydata.example.org/">UPI006</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<upiNumber xmlns="http://mydata.example.org/">UPI007</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<upiNumber xmlns="http://mydata.example.org/">UPI008</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<upiNumber xmlns="http://mydata.example.org/">UPI009</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<upiNumber xmlns="http://mydata.example.org/">UPI010</upiNumber>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<currentStatus xmlns="http://mydata.example.org/">Completed</currentStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<nationalId xmlns="http://mydata.example.org/">NID001</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<nationalId xmlns="http://mydata.example.org/">NID002</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<nationalId xmlns="http://mydata.example.org/">NID003</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<nationalId xmlns="http://mydata.example.org/">NID004</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<nationalId xmlns="http://mydata.example.org/">NID005</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<nationalId xmlns="http://mydata.example.org/">NID006</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<nationalId xmlns="http://mydata.example.org/">NID007</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<nationalId xmlns="http://mydata.example.org/">NID008</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<nationalId xmlns="http://mydata.example.org/">NID009</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<nationalId xmlns="http://mydata.example.org/">NID010</nationalId>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<priorityStatus xmlns="http://mydata.example.org/">URGENT</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<priorityStatus xmlns="http://mydata.example.org/">URGENT</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<priorityStatus xmlns="http://mydata.example.org/">EMERGENCY</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<priorityStatus xmlns="http://mydata.example.org/">EMERGENCY</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<priorityStatus xmlns="http://mydata.example.org/">ROUTINE</priorityStatus>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P001"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P002"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P003"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P004"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P005"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P006"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P007"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P008"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P009"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<hasPatient xmlns="http://mydata.example.org/" rdf:resource="http://mydata.example.org/Patient/P010"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<rdf:type rdf:resource="http://mydata.example.org/Patient"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<visitType xmlns="http://mydata.example.org/">ANC</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<visitType xmlns="http://mydata.example.org/">IN-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<visitType xmlns="http://mydata.example.org/">OUT-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<visitType xmlns="http://mydata.example.org/">OUT-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<visitType xmlns="http://mydata.example.org/">IN-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<visitType xmlns="http://mydata.example.org/">OUT-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<visitType xmlns="http://mydata.example.org/">OUT-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<visitType xmlns="http://mydata.example.org/">EMERGENCY</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<visitType xmlns="http://mydata.example.org/">EMERGENCY</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<visitType xmlns="http://mydata.example.org/">OUT-PATIENT</visitType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<icdCode xmlns="http://mydata.example.org/">A53.9</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<icdCode xmlns="http://mydata.example.org/">B06.9</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<icdCode xmlns="http://mydata.example.org/">B16.9</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<icdCode xmlns="http://mydata.example.org/">B20</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<icdCode xmlns="http://mydata.example.org/">D64.9</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<icdCode xmlns="http://mydata.example.org/">D64.9</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<icdCode xmlns="http://mydata.example.org/">O14.0</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<icdCode xmlns="http://mydata.example.org/">O24.0</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<icdCode xmlns="http://mydata.example.org/">O24.4</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<icdCode xmlns="http://mydata.example.org/">O24.4</icdCode>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<recordedBy xmlns="http://mydata.example.org/">nurse_mary</recordedBy>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<registrationDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-22T19:06:01.767+01:00</registrationDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<rdf:type rdf:resource="http://mydata.example.org/Visit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V001-O24.0">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V003-D64.9">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V004-O14.0">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V005-B16.9">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V009-O24.4">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V010-D64.9">
+	<diagnosisType xmlns="http://mydata.example.org/">FINAL</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V002-O24.4">
+	<diagnosisType xmlns="http://mydata.example.org/">WORKING</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V006-B20">
+	<diagnosisType xmlns="http://mydata.example.org/">WORKING</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V007-B06.9">
+	<diagnosisType xmlns="http://mydata.example.org/">WORKING</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Diagnosis/V008-A53.9">
+	<diagnosisType xmlns="http://mydata.example.org/">WORKING</diagnosisType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V001">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V002">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V003">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V004">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V005">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V006">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V007">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V008">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V009">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Visit/V010">
+	<visitDate xmlns="http://mydata.example.org/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</visitDate>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<patientType xmlns="http://mydata.example.org/">IDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<patientType xmlns="http://mydata.example.org/">UNIDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<patientType xmlns="http://mydata.example.org/">UNIDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<patientType xmlns="http://mydata.example.org/">IDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<patientType xmlns="http://mydata.example.org/">IDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<patientType xmlns="http://mydata.example.org/">REFERRED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<patientType xmlns="http://mydata.example.org/">REFERRED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<patientType xmlns="http://mydata.example.org/">UNIDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<patientType xmlns="http://mydata.example.org/">IDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<patientType xmlns="http://mydata.example.org/">IDENTIFIED</patientType>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P001">
+	<country xmlns="http://mydata.example.org/">Kenya</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P002">
+	<country xmlns="http://mydata.example.org/">Somalia</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P003">
+	<country xmlns="http://mydata.example.org/">Kenya</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P004">
+	<country xmlns="http://mydata.example.org/">Kenya</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P005">
+	<country xmlns="http://mydata.example.org/">Ethiopia</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P006">
+	<country xmlns="http://mydata.example.org/">Kenya</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P007">
+	<country xmlns="http://mydata.example.org/">Sudan</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P008">
+	<country xmlns="http://mydata.example.org/">Tanzania</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P009">
+	<country xmlns="http://mydata.example.org/">Kenya</country>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://mydata.example.org/Patient/P010">
+	<country xmlns="http://mydata.example.org/">Uganda</country>
+</rdf:Description>
+
+</rdf:RDF>

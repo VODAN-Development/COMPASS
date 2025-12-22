@@ -1,0 +1,186 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://mydata.example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+### PATIENT
+#################################################################
+
+ex:PatientMapping a rr:TriplesMap ;
+    rr:logicalTable [ rr:tableName "Patient" ] ;
+
+    rr:subjectMap [
+        rr:template "http://mydata.example.org/Patient/{patient_id}" ;
+        rr:class ex:Patient
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:patientId ;
+        rr:objectMap [ rr:column "patient_id" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:upiNumber ;
+        rr:objectMap [ rr:column "upi_number" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:nationalId ;
+        rr:objectMap [ rr:column "national_id" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:firstName ;
+        rr:objectMap [ rr:column "first_name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:lastName ;
+        rr:objectMap [ rr:column "last_name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:gender ;
+        rr:objectMap [ rr:column "gender" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:ageYears ;
+        rr:objectMap [ rr:column "age_years" ; rr:datatype xsd:integer ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:ageMonths ;
+        rr:objectMap [ rr:column "age_months" ; rr:datatype xsd:integer ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:phoneNumber ;
+        rr:objectMap [ rr:column "phone_number" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:country ;
+        rr:objectMap [ rr:column "country" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:registrationDate ;
+        rr:objectMap [ rr:column "registration_date" ; rr:datatype xsd:dateTime ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:patientType ;
+        rr:objectMap [ rr:column "patient_type" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:createdBy ;
+        rr:objectMap [ rr:column "created_by" ]
+    ] .
+
+#################################################################
+### VISIT
+#################################################################
+
+ex:VisitMapping a rr:TriplesMap ;
+    rr:logicalTable [ rr:tableName "Visit" ] ;
+
+    rr:subjectMap [
+        rr:template "http://mydata.example.org/Visit/{visit_id}" ;
+        rr:class ex:Visit
+    ] ;
+
+    # Link to Patient using parentTriplesMap
+    rr:predicateObjectMap [
+        rr:predicate ex:hasPatient ;
+        rr:objectMap [
+            rr:parentTriplesMap ex:PatientMapping ;
+            rr:joinCondition [
+                rr:child "patient_id" ;
+                rr:parent "patient_id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:visitDate ;
+        rr:objectMap [ rr:column "visit_date" ; rr:datatype xsd:date ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:visitTime ;
+        rr:objectMap [ rr:column "visit_time" ; rr:datatype xsd:time ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:visitType ;
+        rr:objectMap [ rr:column "visit_type" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:priorityStatus ;
+        rr:objectMap [ rr:column "priority_status" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:parentVisit ;
+        rr:objectMap [
+            rr:template "http://mydata.example.org/Visit/{parent_visit_id}"
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:currentStatus ;
+        rr:objectMap [ rr:column "current_status" ]
+    ] .
+
+#################################################################
+### DIAGNOSIS
+#################################################################
+
+ex:DiagnosisMapping a rr:TriplesMap ;
+    rr:logicalTable [ rr:tableName "Diagnosis" ] ;
+
+    rr:subjectMap [
+        rr:template "http://mydata.example.org/Diagnosis/{visit_id}-{icd10_code}" ;
+        rr:class ex:Diagnosis
+    ] ;
+
+    # Link to Visit using parentTriplesMap
+    rr:predicateObjectMap [
+        rr:predicate ex:hasVisit ;
+        rr:objectMap [
+            rr:parentTriplesMap ex:VisitMapping ;
+            rr:joinCondition [
+                rr:child "visit_id" ;
+                rr:parent "visit_id"
+            ]
+        ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:diagnosisType ;
+        rr:objectMap [ rr:column "diagnosis_type" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:icdCode ;
+        rr:objectMap [ rr:column "icd10_code" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:diagnosisDescription ;
+        rr:objectMap [ rr:column "description" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:recordedBy ;
+        rr:objectMap [ rr:column "recorded_by" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:recordedAt ;
+        rr:objectMap [ rr:column "recorded_at" ; rr:datatype xsd:dateTime ]
+    ] .
