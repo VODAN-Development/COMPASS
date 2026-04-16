@@ -1,0 +1,204 @@
+@prefix hds: <http://example.org/hds#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+hds:Country rdf:type owl:Class ;
+            rdfs:label "Country" ;
+            rdfs:comment "Country entity." ;
+            owl:equivalentClass <http://dbpedia.org/ontology/Country> .
+
+hds:Diagnosis rdf:type owl:Class ;
+              rdfs:label "Diagnosis" ;
+              rdfs:comment "Medical diagnosis entity." ;
+              owl:equivalentClass <http://snomed.info/id/439401001> .
+
+hds:DiagnosisType rdf:type owl:Class ;
+                  rdfs:label "DiagnosisType" ;
+                  rdfs:comment "Type of diagnosis." 
+             	  owl:equivalentClass <https://aryastark1614.github.io/hms-vocab/diagnosistype_vocab.ttl> .
+
+hds:Disease rdf:type owl:Class ;
+            rdfs:label "Disease" ;
+            rdfs:comment "Disease entity." 
+            owl:equivalentClass <http://snomed.info/id/64572001> .
+
+hds:Gender rdf:type owl:Class ;
+           rdfs:label "Gender" ;
+           rdfs:comment "Gender classification." 
+           owl:equivalentClass <https://schema.org/gender> .
+
+hds:Patient rdf:type owl:Class ;
+            rdfs:label "Patient" ;
+            rdfs:comment "Patient entity." 
+            owl:equivalentClass <http://snomed.info/id/116154003> .
+
+hds:PatientType rdf:type owl:Class ;
+                rdfs:label "PatientType" ;
+                rdfs:comment "Type of patient." 
+                owl:equivalentClass <https://aryastark1614.github.io/hms-vocab/patienttype_vocab.ttl> .
+
+hds:PriorityStatus rdf:type owl:Class ;
+                   rdfs:label "PriorityStatus" ;
+                   rdfs:comment "Priority level." 
+           	   owl:equivalentClass <http://purl.obolibrary.org/obo/MS_1000919> .
+
+hds:Visit rdf:type owl:Class ;
+          rdfs:label "Visit" ;
+          rdfs:comment "Medical visit" 
+          owl:equivalentClass <http://purl.obolibrary.org/obo/OPMI_0000482> .
+
+hds:VisitType rdf:type owl:Class ;
+              rdfs:label "VisitType" ;
+              rdfs:comment "Type of visit." 
+              owl:equivalentClass <http://purl.obolibrary.org/obo/NCIT_C103165> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+hds:hasAgeInMonths rdf:type owl:DatatypeProperty ;
+                   rdfs:domain hds:Patient ;
+                   rdfs:label "hasAgeInMonths" ;
+                   rdfs:comment "Age in months, if years<5." .
+
+hds:hasAgeInYears rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:label "hasAgeInYears" ;
+                  rdfs:comment "Age in years." .
+
+hds:hasCurrentState rdf:type owl:DatatypeProperty ;
+                    rdfs:label "hasCurrentState" ;
+                    rdfs:comment "Current status (IN_PROGRESS / COMPLETED)" .
+
+hds:hasDepartmentID rdf:type owl:DatatypeProperty ;
+                    rdfs:label "hasDepartmentID" ;
+                    rdfs:comment "Department identifier." .
+
+hds:hasDiagnosisID rdf:type owl:DatatypeProperty ;
+                   rdfs:label "hasDiagnosisID" ;
+                   rdfs:comment "Diagnosis identifier." .
+
+hds:hasFirstName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain hds:Patient ;
+                 rdfs:comment "Patient first name." .
+
+hds:hasICD10Code rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasICD10Code" ;
+                 rdfs:comment "ICD-10 medical code." .
+
+hds:hasLastName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:label "hasLastName" ;
+                rdfs:comment "Patient last name." .
+
+hds:hasNationalID rdf:type owl:DatatypeProperty ;
+                  rdfs:label "hasNationalID" ;
+                  rdfs:comment "National ID number." .
+
+hds:hasPatientID rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasPatientID" ;
+                 rdfs:comment "Patient identifier." .
+
+hds:hasPhoneNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:label "hasPhoneNumber" ;
+                   rdfs:comment "Phone number." .
+
+hds:hasRegistrationDate rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:label "hasRegistrationDate" ;
+                        rdfs:comment "Registration date." .
+
+hds:hasUPINumber rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasUPINumber" ;
+                 rdfs:comment "UPI number." .
+
+hds:hasVisitDateTime rdf:type owl:DatatypeProperty ;
+                     rdfs:label "hasVisitDateTime" ;
+                     rdfs:comment "Visit date and time." .
+
+hds:hasVisitID rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasVisitID" ;
+               rdfs:comment "Visit identifier." .
+
+hds:isActive rdf:type owl:DatatypeProperty ;
+             rdfs:label "isActive" ;
+             rdfs:comment "Active status flag." .
+
+hds:isCreatedBy rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:label "isCreatedBy" ;
+                rdfs:comment "Creator of record." .
+
+hds:isRecordedAt rdf:type owl:DatatypeProperty ;
+                 rdfs:label "isRecordedAt" ;
+                 rdfs:comment "Record timestamp." .
+
+hds:isRecordedBy rdf:type owl:DatatypeProperty ;
+                 rdfs:label "isRecordedBy" ;
+                 rdfs:comment "Recorder identifier." .
+
+hds:wasUpdatedAt rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:label "wasUpdatedAt" ;
+                 rdfs:comment "Last update timestamp." .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+hds:comesFrom rdf:type owl:ObjectProperty ;
+              rdfs:domain hds:Patient ;
+              rdfs:label "comesFrom" ;
+              rdfs:comment "Origin of patient." .
+
+hds:hasDiagnosisType rdf:type owl:ObjectProperty ;
+                     rdfs:domain hds:Patient ;
+                     rdfs:label "hasDiagnosisType" ;
+                     rdfs:comment "Diagnosis type (WORKING / FINAL)" .
+
+hds:hasDisease rdf:type owl:ObjectProperty ;
+               rdfs:domain hds:Diagnosis ;
+               rdfs:label "hasDisease" ;
+               rdfs:comment "Links diagnosis to disease." .
+
+hds:hasGender rdf:type owl:ObjectProperty ;
+              rdfs:domain hds:Patient ;
+              rdfs:label "hasGender" ;
+              rdfs:comment "Patient gender (MALE, FEMALE, OTHER)" .
+
+hds:hasPatientType rdf:type owl:ObjectProperty ;
+                   rdfs:domain hds:Patient ;
+                   rdfs:label "hasPatientType" ;
+                   rdfs:comment "Type of patient (IDENTIFIED, UNIDENTIFIED, REFERRED)." .
+
+hds:hasPriorityStatus rdf:type owl:ObjectProperty ;
+                      rdfs:domain hds:Visit ;
+                      rdfs:label "hasPriorityStatus" ;
+                      rdfs:comment "Priority status of visit (ROUTINE, URGENT, EMERGENCY)" .
+
+hds:hasVisit rdf:type owl:ObjectProperty ;
+             rdfs:domain hds:Patient ;
+             rdfs:label "hasVisit" ;
+             rdfs:comment "Links patient to visits." .
+
+hds:hasVisitType rdf:type owl:ObjectProperty ;
+                 rdfs:domain hds:Visit ;
+                 rdfs:label "hasVisitType" ;
+                 rdfs:comment "Type of visit (OUT-PATIENT, IN-PATIENT, EMERGENCY, ANC)" .
+
+hds:isLinkedTo rdf:type owl:ObjectProperty ;
+               rdfs:domain hds:Diagnosis ,
+                           hds:Visit ;
+               rdfs:label "isLinkedTo" ;
+               rdfs:comment "Generic linkage between entities." .
