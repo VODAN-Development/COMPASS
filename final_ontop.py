@@ -26,9 +26,9 @@ ONTOP_DIR = "/Users/admin/Downloads/ontop-cli-5.4.0"
 ONTOP_EXISTS = os.path.exists(ONTOP_DIR)
 
 # RDF + AllegroGraph endpoint
-username = "admin"
-password = "91v1BzU8ac6jzeNkn6jTTa"
-endpoint_url = "https://ag1ujtnj93md49vl.allegrograph.cloud/repositories/pregnancy/statements"
+username = "Admin"
+password = "KzU8etYyKBYQzoKxyjVqOo"
+endpoint_url = "https://ag1nckkupkhjagdy.allegrograph.cloud"
 rdf_file_path = "/Users/admin/Downloads/ontop-cli-5.4.0/test_output.rdf"
 
 # ============================================================
