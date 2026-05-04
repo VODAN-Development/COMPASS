@@ -5,6 +5,10 @@ import base64
 import urllib.request
 import jaydebeapi
 import socket  # Needed to catch socket.timeout
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file
+load_dotenv()
 
 timeout_seconds = 30 
 # ============================================================
@@ -12,24 +16,37 @@ timeout_seconds = 30
 # ============================================================
 
 # H2 setup
-os.environ["JAVA_HOME"] = "/opt/homebrew/opt/openjdk@17"
-os.environ["PATH"] = os.environ["JAVA_HOME"] + "/bin:" + os.environ["PATH"]
+java_home_env = os.getenv("JAVA_HOME")
+if java_home_env:
+    os.environ["JAVA_HOME"] = java_home_env
+    # os.pathsep automatically uses ';' on Windows and ':' on Mac/Linux
+    os.environ["PATH"] = os.environ["JAVA_HOME"] + os.pathsep + "bin" + os.pathsep + os.environ["PATH"]
 
 jdbc_driver = "org.h2.Driver"
 jdbc_url = "jdbc:h2:~/pregnancy_db"
 jdbc_user = "sa"
 jdbc_password = ""
-h2_jar_path = "/Users/admin/Downloads/h2/bin/h2-2.4.240.jar"
+h2_jar_path = os.getenv("H2_JAR_PATH", "./h2/bin/h2-2.4.240.jar")
 
 # Ontop setup 
-ONTOP_DIR = "/Users/admin/Downloads/ontop-cli-5.4.0"    
+ONTOP_DIR = os.getenv("ONTOP_DIR", "./ontop-cli-5.4.0")    
 ONTOP_EXISTS = os.path.exists(ONTOP_DIR)
 
-# RDF + AllegroGraph endpoint
-username = "Admin"
-password = "KzU8etYyKBYQzoKxyjVqOo"
-endpoint_url = "https://ag1nckkupkhjagdy.allegrograph.cloud"
-rdf_file_path = "/Users/admin/Downloads/ontop-cli-5.4.0/test_output.rdf"
+# RDF + AllegroGraph endpoint (Fetched from .env)
+ag_user = os.getenv("AG_USER")
+ag_password = os.getenv("AG_PASSWORD")
+ag_base_url = os.getenv("AG_BASE_URL")
+ag_repo = os.getenv("AG_REPO")
+
+# Save the RDF file dynamically in the current working directory
+rdf_file_path = os.path.join(os.getcwd(), "test_output.rdf")
+
+# Ensure required environment variables are set
+if not all([ag_user, ag_password, ag_base_url, ag_repo]):
+    raise ValueError("Missing one or more AllegroGraph credentials in the .env file.")
+
+# Construct the standard AllegroGraph REST API endpoint for uploading RDF statements
+endpoint_url = f"{ag_base_url.rstrip('/')}/repositories/{ag_repo}/statements"
 
 # ============================================================
 # DATABASE CONNECTION HELPER
@@ -131,38 +148,13 @@ def populate_staging_table(grouped_data):
 # ============================================================
 # STEP 2: ONTOP MATERIALIZATION
 # ============================================================
-# def run_ontop_materialize():
-#     if not ONTOP_EXISTS:
-#         print("[WARNING] Ontop not installed — skipping materialization.")
-#         return False
-#     try:
-#         command = [
-#             os.path.join(ONTOP_DIR, "ontop"),
-#             "materialize",
-#             "-m", "Second_mapping_1.ttl",
-#             "-o", rdf_file_path,
-#             "-p", "ontop.properties"
-#         ]
-#         result = subprocess.run(
-#             command,
-#             cwd=ONTOP_DIR,
-#             check=True,
-#             text=True,
-#             stdout=subprocess.PIPE,
-#             stderr=subprocess.PIPE
-#         )
-#         print(result.stdout)
-#         print("Ontop materialization completed.")
-#         return True
-#     except Exception as e:
-#         print(f"[ERROR] Ontop materialize failed: {e}")
-#         return False
-
 def run_ontop_materialize():
     if not ONTOP_EXISTS:
         print("[WARNING] Ontop not installed — skipping materialization.")
         return False
     try:
+        # Note: on Windows, if "ontop" is a .bat file and fails to execute without the extension, 
+        # you might need to change "ontop" to "ontop.bat" below.
         command = [
             os.path.join(ONTOP_DIR, "ontop"),
             "materialize",
@@ -173,7 +165,7 @@ def run_ontop_materialize():
         result = subprocess.run(
             command,
             cwd=ONTOP_DIR,
-            check=False,     # <- IMPORTANT: allow capture of stderr
+            check=False,
             text=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
@@ -196,33 +188,9 @@ def run_ontop_materialize():
         print(f"[ERROR] Ontop materialize crashed: {e}")
         return False
 
-
 # ============================================================
 # STEP 3: UPLOAD RDF TO ALLEGROGRAPH
 # ============================================================
-# def upload_rdf():
-#     if not os.path.exists(rdf_file_path):
-#         print(f"[ERROR] RDF not found: {rdf_file_path}")
-#         return False
-#     try:
-#         with open(rdf_file_path, "rb") as f:
-#             rdf_data = f.read()
-#         request = urllib.request.Request(
-#             url=endpoint_url,
-#             data=rdf_data,
-#             method="POST",
-#             headers={
-#                 "Content-Type": "application/rdf+xml",
-#                 "Authorization": "Basic " + base64.b64encode(f"{username}:{password}".encode()).decode()
-#             }
-#         )
-#         response = urllib.request.urlopen(request)
-#         print("Upload status:", response.status)
-#         return response.status in [200, 204]
-#     except Exception as e:
-#         print(f"[ERROR] upload_rdf(): {e}")
-#         return False
-
 def upload_rdf():
     if not os.path.exists(rdf_file_path):
         print(f"[ERROR] RDF file not found: {rdf_file_path}")
@@ -234,7 +202,7 @@ def upload_rdf():
 
         headers = {
             "Content-Type": "application/rdf+xml",
-            "Authorization": "Basic " + base64.b64encode(f"{username}:{password}".encode()).decode()
+            "Authorization": "Basic " + base64.b64encode(f"{ag_user}:{ag_password}".encode()).decode()
         }
 
         request = urllib.request.Request(
@@ -258,7 +226,7 @@ def upload_rdf():
         print(f"[HTTP ERROR] Code: {e.code}, Reason: {e.reason}")
         return False
     except urllib.error.URLError as e:
-        print(f"[URL ERROR] Reason: {e.reason}")
+        print(f"https://www.merriam-webster.com/dictionary/error Reason: {e.reason}")
         return False
     except socket.timeout:
         print(f"[TIMEOUT ERROR] Upload timed out after {timeout_seconds} seconds")
@@ -266,10 +234,6 @@ def upload_rdf():
     except Exception as e:
         print(f"[ERROR] Unexpected error: {e}")
         return False
-
-# Call the function
-upload_rdf()
-
 
 # ============================================================
 # STEP 4: MARK DIAGNOSIS AS PROCESSED
@@ -295,11 +259,12 @@ def mark_diagnoses_processed(grouped_data):
 # ============================================================
 # MAIN LOOP
 # ============================================================
-while True:
-    grouped = fetch_unprocessed_visits()
-    if grouped:
-        if populate_staging_table(grouped):
-            if run_ontop_materialize():
-                if upload_rdf():
-                    mark_diagnoses_processed(grouped)
-    time.sleep(60)
+if __name__ == "__main__":
+    while True:
+        grouped = fetch_unprocessed_visits()
+        if grouped:
+            if populate_staging_table(grouped):
+                if run_ontop_materialize():
+                    if upload_rdf():
+                        mark_diagnoses_processed(grouped)
+        time.sleep(60)
