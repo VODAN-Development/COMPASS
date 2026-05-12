@@ -1,3 +1,5 @@
+# COMPASS
+
 ## Overview
 
 This project demonstrates a **real-time pipeline** that converts relational healthcare data into RDF and publishes it to **AllegroGraph** using **Ontop**.
