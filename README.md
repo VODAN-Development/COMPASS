@@ -80,8 +80,6 @@ LIMIT 50
 
 ## Contributing & issue reporting
 
-!UPDATE THE LINKS BELOW TO FIT WITH THIS REPOSITORY.!
-
 For reuse see the [license](https://github.com/VODAN-Development/FAIR-Data-Point/blob/main/LICENSE).
 For contributing to this project see the [contributor file](https://github.com/VODAN-Development/FAIR-Data-Point/blob/main/CONTRIBUTING.md).
 For issue reporting use the [issue board](https://github.com/VODAN-Development/FAIR-Data-Point/issues).
